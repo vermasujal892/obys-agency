@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "plain Light";
     color: #fff;
+
 }
 html,body{
     width: 100%;
@@ -68,13 +69,13 @@ html,body{
 }
 #main{
     position: relative;
-    background-color: #030202;
+    background-color: #151515;
 }
 
 .page1{
     height: 100vh;
     width: 100%;
-    background: #151515;;
+    background: #151515;
 }
 .black{
     color: black;
@@ -114,11 +115,15 @@ html,body{
     align-items: center;
     z-index: 9999;
 }
-#hero3 h2,h3{
+#hero3 h2{
     font-size: 7.5vw;
     text-transform: uppercase;
     line-height: 8vw;
-    text-decoration: underline;
+  
+}
+.hero h2{
+    border-bottom: 0.5vw solid  #fff;
+    padding-bottom: 0.8vw;
 
 }
 .hero:nth-child(2){
@@ -134,4 +139,140 @@ html,body{
     -webkit-text-stroke:0.4px #fff ;
     color: transparent;
     font-weight: 500;
+    border-bottom: 0.5vw solid  #ffffff00;
+
+
+}
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    padding-top: 20vh;
+    position: relative;
+    background: #151515;
+
+}
+.video-container{
+    height: 66vh;
+    width: 71vw;
+    position: relative;
+    left: 28%;
+  
+}
+.video-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    
+}
+.video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* background-image: url("https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg&quot") */
+}
+.video-curser{
+    height: 8vw;
+    width: 8vw;
+    border-radius: 50%;
+    background-color:#FFA63D;
+    border: 2px slid #fff;
+    position:absolute;
+    top: -10%;
+    left: 80%;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-curser i{
+    font-size: 1.8vw;
+}
+
+/* page 3 */
+
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #a70808;
+
+
+}
+
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #151515;
+    padding-top: 5vh;
+
+}
+.page4-content{
+    /* width: 72vh; */
+    margin-left: 28%;
+
+}
+.page4-content h1{
+    font-size: 7vw ;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.underline{
+    height: 1.5px;
+    width:100%;
+    background-color: #ffffff79;
+    border-radius: 1vh;
+    margin: 4vw 0;
+}
+.page4-content p{
+    font-size: 2.2vw;
+    width: 50%;
+    margin-bottom: 7vh;
+}
+.page4-flex {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    gap: 4vh;
+}
+.page4-flex img{
+    width: 75vh;
+}
+.page4-flex p{
+    width:30%;
+    font-size: 2.5vh;
+}
+.page4-blueDiv{
+    width: 40vw;
+    background-color: #3F7DF4;
+    padding: 3vw 3vw;
+    position: relative;
+    left: 30%;
+    bottom: 10vw;
+
+}
+.awarding{
+display: flex;
+align-items: center;
+justify-content: space-around;
+border-bottom: 1px solid #fff;
+}
+.awarding h4{
+    font-weight: 500;
+    font-size: 1.4vw;
+}
+.awarding p{
+    font-size:1vw;
+    margin-top: 7vh;
+    width: 50;
+    
+}
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    padding: 5vw 0;
 }
