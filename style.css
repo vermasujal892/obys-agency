@@ -16,7 +16,7 @@ html,body{
     border-radius: 50%;
     border: 2px solid white;
     position: fixed;
-    z-index: 999;
+    z-index:0 ;
     mix-blend-mode: difference;
     transform: translate(-50%,-50%);
     opacity: 0.7;
@@ -97,10 +97,10 @@ html,body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 20vw;
+    width: 20rem;
 }
 .nav-routes h4{
-    font-size: 1.1vw;
+    font-size: 1rem;
     font-weight: 400;
 }
 .hero{
@@ -112,8 +112,7 @@ html,body{
     height: fit-content;
     overflow: hidden;
     display: flex;
-    align-items: center;
-    z-index: 9999;
+    align-items: center;    
 }
 #hero3 h2{
     font-size: 7.5vw;
@@ -147,7 +146,7 @@ html,body{
 .page2{
     height: 100vh;
     width: 100%;
-    padding-top: 20vh;
+    margin-top: 30vh;
     position: relative;
     background: #151515;
 
@@ -191,22 +190,13 @@ html,body{
     font-size: 1.8vw;
 }
 
-/* page 3 */
-
-.page3{
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
-    background: #a70808;
-
-
-}
 
 .page4{
     min-height: 100vh;
     width: 100%;
     position: relative;
     background: #151515;
+    margin-top: 5vh;
     padding-top: 5vh;
 
 }
@@ -358,4 +348,142 @@ border-bottom: 1px solid #fff;
     margin-top: 4vh;
     font-weight: 560;
     
+}
+
+
+/* page 3 */
+
+/* .page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #a70808;
+
+
+} */
+
+.page3{
+    min-height:100vh;
+    width: 100%;
+    position: relative;
+    background: #151515;
+    padding-top: 2vh;
+
+}
+.page3-circle{
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10vw;
+    margin-top: 30vh;
+    position:relative;
+}
+.page3-circle svg{
+    height: 20vh;
+   
+}
+.circle-in{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale:0;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+
+}
+.circle-in p{
+    font-size: 1vw;
+    color: black;
+    transition: all ease-in-out 0.5s;
+    transition-delay: 0.4s;
+    opacity: 0;
+
+}
+.page3-circle2:hover .circle-in{
+    scale: 1;
+}
+.page3-circle:hover .circle-in{
+    scale: 1;
+}
+.page3-circle2:hover .circle-in p{
+    opacity: 1;
+}
+.page3-circle:hover .circle-in p{
+    opacity: 1;
+}
+.page3-circle2{
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+    position:relative;
+    /* margin-top: 30vh; */
+}
+.page3-circle2 svg{
+    height: 20vh;
+    transform: rotate(-45deg);
+   
+}
+.page3 h1{
+    font-size: 7vw ;
+    text-transform: uppercase;
+    width: 100%;
+    margin-left: 28vw;
+}
+.page3 .underline{
+    margin-left: 28vw;
+
+}
+
+.image-div-container{
+    /* background-color: red; */
+    padding-bottom: 10vw;
+    padding-top:5vh;
+    padding-left: 5vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.img-div {
+    height: 33vw;
+    width: 24vw;
+    /* background-color: blue; */
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    /* padding: 5vw; */
+    gap: 5vw;
+    margin-left: 5vw;
+    margin-bottom: 20vh;
+
+}
+#bigcdiv {
+    height: 40vw;
+    width: 31vw;
+}
+.img-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+._canvas_container{
+z-index: 99999 !important;
+pointer-events: none;
 }
