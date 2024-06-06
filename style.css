@@ -10,17 +10,24 @@ html,body{
     width: 100%;
     height: 100%;
 }
-.crsr{
+/* .crsr{
     height: 2.6vw;
     width: 2.6vw;
     border-radius: 50%;
     border: 2px solid white;
     position: fixed;
-    z-index:0 ;
+    z-index:999;
     mix-blend-mode: difference;
     transform: translate(-50%,-50%);
     opacity: 0.7;
 
+} */
+
+.mousefollower{
+    border: 2px solid #fff;
+    background-color: rgb(255, 255, 255);
+    scale: 2;
+    mix-blend-mode: difference;
 }
 .loader{
     height: 100%;
@@ -156,6 +163,10 @@ html,body{
     width: 71vw;
     position: relative;
     left: 28%;
+    /* background-color: red; */
+    background-image: url("./images/Showreel-2022-preview-1.jpg");
+    background-size: cover;
+    background-position: center;
   
 }
 .video-container img{
@@ -170,14 +181,16 @@ html,body{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    /* background-image: url("https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg&quot") */
+   
+    opacity: 0;
 }
+
 .video-curser{
     height: 8vw;
     width: 8vw;
     border-radius: 50%;
     background-color:#FFA63D;
-    border: 2px slid #fff;
+    /* border: 2px slid #fff; */
     position:absolute;
     top: -10%;
     left: 80%;
@@ -185,6 +198,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 999;
 }
 .video-curser i{
     font-size: 1.8vw;
@@ -323,18 +337,15 @@ border-bottom: 1px solid #fff;
     font-size: 7vw;
     text-transform: uppercase;
     height: 17vh;
-    /* transition-duration: 5s;
-    transition-property: all;
-    transition-timing-function: linear;
-    transition-delay: 1s; */
+   
     margin-top: -5vh;
 }
-.footer h1:hover{
+/* .footer h1:hover{
     font-family: silk serif;
     -webkit-text-stroke: 1px #fff;
     color: transparent;
     font-weight: 400;
-}
+} */
 .socal-thougts{
     display: flex;
     justify-content: space-around;
@@ -398,14 +409,14 @@ border-bottom: 1px solid #fff;
     justify-content: center;
     scale:0;
     border-radius: 50%;
-    transition: all ease 0.5s;
+    transition: all ease 0.4s;
 
 }
 .circle-in p{
     font-size: 1vw;
     color: black;
     transition: all ease-in-out 0.5s;
-    transition-delay: 0.4s;
+    transition-delay: 0.2s;
     opacity: 0;
 
 }
@@ -486,4 +497,20 @@ border-bottom: 1px solid #fff;
 ._canvas_container{
 z-index: 99999 !important;
 pointer-events: none;
+}
+
+
+#flag{
+    height: 25vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform:translate(-50%,-50%);
+    opacity: 0;
+
+}
+#hero3{
+    /* background-color: red; */
+    z-index: 999;
+    position: relative;
 }
